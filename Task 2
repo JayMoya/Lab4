@@ -1,0 +1,71 @@
+VectorOne=    [1,3,5,6]
+VectorTwo=    [2,5,10,12,]
+VectorThree=  [3,7,15,18]
+VectorFour=   [4,9,20,12]
+VectorFive=   [5,11,25,28]
+VectorSix=    [6,13,30,36]
+VectorSeven=  [7,15,32,37]
+VectorEight=  [8,17,34,39]
+VectorNine=   [9,19,35,39]
+VectorTen=    [14,34,65,49]
+
+A = []
+B = []
+C = []
+D = []
+E = []
+
+print('Vector1: ', VectorOne, 'Vector2:', VectorTwo)
+print('Inner Product of two vectors: (VectorOne * VectorTwo)')
+for i in range(len(VectorOne)):
+    product1 = VectorOne[i] * VectorTwo[i]
+    print(VectorOne[i], '*', VectorOne[i], '=', product1, '+')
+    A.append(product1)
+print('(VectorOne * VectorTwo) = ',A)
+print('The sum of all numbers :', sum(A))
+print('#'*64)
+##########################################
+
+print('Vector3: ', VectorThree, 'Vector4:', VectorFour)
+print('Inner Product of two vectors: (VectorThree * VectorFour)')
+for i in range(len(VectorThree)):
+    product2 = VectorThree[i] * VectorFour[i]
+    print(VectorThree[i], '*', VectorFour[i], '=', product2, '+')
+    B.append(product2)
+print('(VectorThree * VectorFour) = ',B)
+print('The sum of all numbers :', sum(B))
+print('#'*64)
+##########################################
+
+print('Vector5: ', VectorFive, 'Vector6:', VectorSix)
+print('Inner Product of two vectors: (VectorFive * VectorSix)')
+for i in range(len(VectorFive)):
+    product3 = VectorFive[i] * VectorSix[i]
+    print(VectorFive[i], '*', VectorSix[i], '=', product3, '+')
+    C.append(product3)
+print('(VectorFive * VectorSix) = ',C)
+print('The sum of all numbers :', sum(C))
+print('#'*64)
+##########################################
+
+print('Vector7: ', VectorSeven, 'Vector8:', VectorEight)
+print('Inner Product of two vectors: (VectorSeven * VectorEight)')
+for i in range(len(VectorSeven)):
+    product4 = VectorSeven[i] * VectorEight[i]
+    print(VectorSeven[i], '*', VectorEight[i], '=', product4, '+')
+    D.append(product4)
+print('(VectorSeven * VectorEight) = ',D)
+print('The sum of all numbers :', sum(D))
+print('#'*64)
+##########################################
+
+print('Vector9: ', VectorNine, 'Vector9:', VectorTen)
+print('Inner Product of two vectors: (VectorNine* VectorTen)')
+for i in range(len(VectorNine)):
+    product5 = VectorNine[i] * VectorTen[i]
+    print(VectorNine[i], '*', VectorTen[i], '=', product5, '+')
+    E.append(product5)
+print('(VectorNine* VectorTen) = ',E)
+print('The sum of all numbers :', sum(E))
+print('#'*64)
+##########################################
