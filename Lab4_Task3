@@ -1,0 +1,25 @@
+import numpy as np
+import matplotlib.pyplot as plt
+
+J= np.array ([-0.2, 7.4 , -0.8])
+A= np.array ([-0.3, 5.6 , -0.7])
+Y= np.array ([-0.4, 6.4 , -0.6])
+
+answer = ((np.square(J) + np.square(A) + np.square(Y)) * (np.divide(np.multiply(J,(np.add(A, (np.multiply(J,A))))),Y)))*(np.linalg.norm(J+A+Y))
+print('(J**2 + A**2 + Y**2)*(J*(A+J*A)/Y)*||J + A + Y||=',answer)
+
+plt.quiver(J[0], J[1], A[0], A[1], angles='xy', scale_units='xy', scale=1, color='blue')
+plt.quiver(J[0] + A[0], J[1] + A[1], Y[0], Y[1], angles='xy', scale_units='xy', scale=1, color='green')
+E= A + Y
+plt.quiver(J[0], A[1], Y[0], E[1] ,angles='xy', scale_units='xy', scale=1, color='blue')
+
+R_mag = np.sqrt(np.sum(A**2+Y**2))
+rise = Y[1]
+run = Y[0]
+slope = rise/run
+print('The slope is: ',slope)
+plt.xlim(-5,9)
+plt.ylim(4,7.5)
+plt.grid()
+plt.legend()
+plt.show()
